@@ -1,23 +1,23 @@
 @font-face {
-  src: url(/fonts/Play-Regular.ttf);
+  src: url(../fonts/Play-Regular.ttf);
   font-family: 'Play';
   font-weight: 400;
 }
 
 @font-face {
-  src: url(/fonts/Play-Bold.ttf);
+  src: url(../fonts/Play-Bold.ttf);
   font-family: 'Play';
   font-weight: 700;
 }
 
 @font-face {
-  src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
+  src: url(../fonts/Inter-VariableFont_opsz\wght.ttf);
   font-family: 'Inter';
   font-weight: 500;
 }
 
 @font-face {
-  src: url(/fonts/SpaceGroteskBold.ttf);
+  src: url(../fonts/SpaceGroteskBold.ttf);
   font-family: 'SpaceGrotesk';
   font-weight: 700;
 }

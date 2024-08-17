@@ -1,12 +1,4 @@
 $(document).ready(function () {
-  // можно просто $(function(){});
-  // $('#id'); // обращение по id
-  // $('.pagecrm_crm-partners__link').css('border', 'solid 3px green'); добавляет к классу css свойство
-  // $('.pagecrm_crm-partners__link-img').mouseenter(function () {
-  //   $('.pagecrm_crm-partners__link-img').attr(src, '/images/arrow_shadowed.svg');
-  // });
-  // $('.pagecrm_application__select').styler();
-
   // подсветка кнопок svg при наведении
 
   $('.pagecrm_crm-partners__link-img').mouseenter(function () {
