@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>alpha marketing</title>
   </head>
   <body class="pagecrm_page">
@@ -25,6 +29,18 @@
             </button>
             <input class="pagecrm_nav-block__input" />
           </form>
+          <!-- popup menu -->
+          <ul class="pagecrm_menu" id="popup_menu">
+            <li class="pagecrm_menu__item">
+              <a class="pagecrm_menu__link" href="#">Контакты</a>
+            </li>
+            <li class="pagecrm_menu__item">
+              <a class="pagecrm_menu__link" href="#">Связаться с нами</a>
+            </li>
+            <li class="pagecrm_menu__item">
+              <a class="pagecrm_menu__link" href="#">Партнеры</a>
+            </li>
+          </ul>
         </div>
         <div class="pagecrm_nav-block__link-block">
           <a class="pagecrm_nav-block__links" href="">Главная</a>
@@ -39,7 +55,7 @@
         <img class="pagecrm_crm__img" src="./images/crm_img.svg" alt="crm" />
         <img class="pagecrm_crm__lines" src="./images/crm_lines.svg" alt="crm" />
       </div>
-      <button class="pagecrm_crm__btn" type="button">Оставить заявку</button>
+      <a class="pagecrm_crm__btn" type="button" href="#applicationForm"> Оставить заявку </a>
       <h2 class="pagecrm_managing__title">Управление бизнес-процессами</h2>
       <ul class="pagecrm_managing__features">
         <li class="pagecrm_managing__feat-item">
@@ -171,7 +187,7 @@
           </ul>
         </div>
       </section>
-      <form class="pagecrm_application">
+      <form class="pagecrm_application" id="applicationForm">
         <h2 class="pagecrm_application__title">Оставить заявку</h2>
         <p class="pagecrm_application__subtitle">
           Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут
@@ -458,41 +474,11 @@
         </button>
       </form>
     </div>
-    <!-- popup menu -->
-    <!-- <div class="pagecrm_menu" id="popup_menu">
-      <form class="pagecrm_popup__form" novalidate>
-        <h2 class="pagecrm_popup__title">Форма для заполнения</h2>
-        <p class="pagecrm_popup__subtitle">
-          Оставьте свои контактные данные,
-          мы&nbsp;свяжемся&nbsp;с&nbsp;Вами&nbsp;в&nbsp;течение&nbsp;20&nbsp;минут
-        </p>
-        <input
-          class="pagecrm_popup__input"
-          type="tel"
-          id="phone"
-          placeholder="Ваш телефон"
-          required
-        />
-        <p class="input-error" id="phoneError"></p>
-        <input
-          class="pagecrm_popup__input"
-          type="email"
-          id="email"
-          placeholder="@Почта*"
-          required
-        />
-        <p class="input-error" id="phoneError"></p>
-
-        <button class="pagecrm_application__btn pagecrm_application__btn_popup" type="submit">
-          Отправить заявку
-        </button>
-      </form> -->
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/mask.js"></script>
-    <script src="./js/newSelect.js"></script>
+    <script src="./js/select.js"></script>
     <script src="./js/validate.js"></script>
   </body>
 </html>

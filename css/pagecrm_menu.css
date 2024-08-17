@@ -1,0 +1,45 @@
+.pagecrm_menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+
+  z-index: 3;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(215, 149, 255, 0.5);
+  background: rgba(66, 25, 99, 0.9);
+  list-style-type: none;
+  padding: 0px 20px 20px;
+  margin: 0;
+  transform: translateY(10px); Мягкий отступ вниз для появления
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Плавное появление */
+  opacity: 0;
+}
+
+.pagecrm_menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Убираем отступ при показе */
+  }
+
+
+.pagecrm_menu__item {
+  margin: 20px 0px 0;
+}
+
+.pagecrm_menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.pagecrm_menu__link:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: rgba(215, 149, 255, 1) 1px 0 10px;
+  text-shadow: rgba(255, 255, 255, 1) 1px 0 10px;
+}
+
+

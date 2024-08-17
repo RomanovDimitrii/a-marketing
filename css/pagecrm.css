@@ -43,6 +43,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .pagecrm_nav-block__burger {
@@ -153,6 +154,7 @@
   border-radius: 20px;
   padding: 10px 40px;
   color: #ffffff;
+  text-decoration: none;
   background: linear-gradient(rgba(177, 149, 255, 1), rgba(177, 149, 255, 1)) padding-box,
     linear-gradient(to right, #ca8eff, #a1b4ef, #74dfdd, #59f8d2) border-box;
   border: 2px solid transparent;
