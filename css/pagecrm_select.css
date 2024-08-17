@@ -1,0 +1,99 @@
+.pagecrm_select {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+
+  line-height: 1.3;
+  padding: 17px 0 16px 24px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  color: #ffffff;
+
+  background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114)) padding-box,
+    linear-gradient(to right, #9400ff, #c64f87) border-box;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+.pagecrm_select_service {
+  border-radius: 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #ffffff;
+
+  background: linear-gradient(rgba(183, 126, 255, 1), rgba(183, 126, 255, 1)) padding-box,
+    linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(215, 149, 255, 0.2),
+        rgba(123, 194, 254, 0.2)
+      )
+      border-box;
+
+  border-radius: 10px;
+}
+
+.pagecrm_select__new-select {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pagecrm_select__new-select__list {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  cursor: pointer;
+  width: 96.5%;
+  z-index: 2;
+  background: rgba(165, 100, 205, 1);
+  border-radius: 10px;
+  user-select: none;
+  padding: 0 0 0 11px;
+}
+
+.pagecrm_select__new-select__list.on {
+  display: block;
+}
+
+.pagecrm_select__new-select__item span {
+  display: block;
+  padding: 10px 15px;
+}
+
+.pagecrm_select__new-select__item span:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: rgba(215, 149, 255, 1) 1px 0 10px;
+  text-shadow: rgba(255, 255, 255, 1) 1px 0 10px;
+}
+
+.pagecrm_select__new-select:after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 18px;
+  top: 5px;
+  background: url('./images/arrow_down.svg') no-repeat;
+  background-size: contain;
+  opacity: 1;
+
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.pagecrm_select__new-select.on:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
