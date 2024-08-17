@@ -1,5 +1,5 @@
 @import url(./vendor/normalize.css);
-@import url(./vendor/fonts.css);
+@import url(/vendor/fonts.css);
 @import url(./css/pagecrm.css);
 @import url(./css/pagecrm_select.css);
 @import url(./css/pagecrm_menu.css);
