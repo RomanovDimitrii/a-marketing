@@ -1,5 +1,8 @@
 # Проект alpha-marketing
 
+**сайт:** 
+https://romanovdimitrii.github.io/a-marketing/
+
 **Реализован функционал:**
 
 - mobile first
