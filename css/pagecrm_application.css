@@ -1,0 +1,222 @@
+.pagecrm_application {
+  margin: 75px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114)) padding-box,
+    linear-gradient(to right, #9400ff, #c64f87, #9400ff) border-box;
+  border: 2px solid transparent;
+
+  box-shadow: 0px 0px 10px 0px rgb(150, 98, 255);
+  backdrop-filter: blur(50px);
+  padding: 44px 18px;
+  max-width: 452px;
+}
+
+.pagecrm_application__block {
+  display: flex;
+}
+
+.pagecrm_application__title {
+  /* font-family: 'SpaceGrotesk'; */
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  background: linear-gradient(157.31deg, rgb(177, 149, 255), rgb(215, 149, 255));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pagecrm_application__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.pagecrm_application__input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 17px 0 16px 24px;
+  background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114)) padding-box,
+    linear-gradient(to right, rgb(148, 0, 255), rgba(198, 79, 135, 0.83)) border-box;
+  /* background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114)) padding-box,
+      linear-gradient(to right, #9400ff, #c64f87) border-box; */
+  border: 5px solid transparent;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.pagecrm_application__select-block {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.pagecrm_application__textarea {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 15px 24px;
+  width: 100%;
+  height: 110px;
+  background: linear-gradient(rgba(72, 5, 114), rgba(72, 5, 114)) padding-box,
+    linear-gradient(to right, #9400ff, #c64f87) border-box;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.pagecrm_application__textarea::placeholder {
+  opacity: 50%;
+}
+
+.pagecrm_application__btn {
+  margin: 20px 0 0;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 10px 40px;
+  color: #ffffff;
+  background: linear-gradient(rgb(30, 0, 68), rgb(30, 0, 68)) padding-box,
+    linear-gradient(to right, #383fec, #23ffff) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 3.15px 0px rgba(162, 45, 247, 0.1), 0px 0px 6.52px 0px rgba(162, 45, 247, 0.1),
+    0px 0px 13px 0px rgba(162, 45, 247, 0.1), 0px 0px 25.48px 0px rgba(162, 45, 247, 0.1),
+    0px 0px 46.85px 0px rgba(162, 45, 247, 0.1), 0px 0px 19px 9px rgba(162, 45, 247, 0.1);
+  backdrop-filter: blur(100px);
+}
+
+.pagecrm_application__btn:hover {
+  box-shadow: 0px 0px 20px 0px rgb(139, 255, 255);
+}
+
+.pagecrm_application__btn:active {
+  box-shadow: 0px 0px 10px 0px rgb(215, 149, 255);
+}
+
+.pagecrm_application__title_second {
+  margin: 75px 0 0;
+
+  -webkit-text-fill-color: #ffffff;
+}
+
+.pagecrm_application__subtitle_second {
+  background: linear-gradient(
+    218.12deg,
+    rgb(255, 255, 255),
+    rgb(215, 149, 255),
+    rgb(123, 194, 254)
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 10px 0 0;
+  max-width: 270px;
+}
+
+.pagecrm_application_second {
+  background: linear-gradient(rgba(183, 126, 255, 1), rgba(183, 126, 255, 1)) padding-box,
+    linear-gradient(225deg, rgb(255, 255, 255), rgb(215, 149, 255), rgb(123, 194, 254)) border-box;
+
+  backdrop-filter: blur(50px);
+  padding: 44px 18px;
+}
+
+.pagecrm_application__title_violet {
+  line-height: 40px;
+
+  background: linear-gradient(157.31deg, rgb(177, 149, 255), rgb(215, 149, 255));
+  background: linear-gradient(157.31deg, rgb(237, 235, 244), rgb(215, 149, 255));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0;
+}
+
+.pagecrm_application__subtitle_white {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.pagecrm_application__input_transpanent {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 14px 0 11px 24px;
+  background: linear-gradient(rgba(183, 126, 255, 1), rgba(183, 126, 255, 1)) padding-box,
+    linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(215, 149, 255, 0.2),
+        rgba(123, 194, 254, 0.2)
+      )
+      border-box;
+  border: 5px solid transparent;
+  /* opacity: 0.2; */
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.pagecrm_application__btn_second {
+  margin: 20px 0 0;
+  padding: 16px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  border: 1px solid transparent;
+}
+
+.pagecrm_application__btn_small {
+  padding: 8.5px 0;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+  letter-spacing: -1%;
+  width: 69%;
+  border: 1px solid transparent;
+  margin: 0 0 53px;
+}
+
+@media screen and (min-width: 1000px) {
+  .pagecrm_application__title {
+    font-size: 40px;
+  }
+
+  .pagecrm_application__subtitle {
+    font-size: 16px;
+    max-width: 450px;
+    padding: 0 30px;
+  }
+
+  .pagecrm_application_second {
+    background: linear-gradient(rgba(183, 126, 255, 1), rgba(183, 126, 255, 1)) padding-box,
+      linear-gradient(225deg, rgb(255, 255, 255), rgb(215, 149, 255), rgb(123, 194, 254)) border-box;
+
+    backdrop-filter: blur(50px);
+    padding: 44px 18px;
+  }
+}

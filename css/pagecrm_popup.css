@@ -1,0 +1,84 @@
+.pagecrm_popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  /* opacity: 0; */
+  z-index: 3;
+
+  transition: opacity 0.5s, visibility 0.5s linear;
+}
+
+.pagecrm_popup_opened {
+  display: flex;
+  visibility: visible;
+  /* opacity: 1; */
+}
+
+.pagecrm_popup__form {
+  max-width: 360px;
+  margin: 0px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background: linear-gradient(rgba(183, 126, 255, 0.8), rgba(183, 126, 255, 0.8)) padding-box,
+    linear-gradient(to right, rgba(56, 63, 236, 1), rgba(35, 255, 255, 1)) border-box;
+  border: 2px solid transparent;
+
+  box-shadow: 0px 0px 10px 0px rgb(150, 98, 255);
+  backdrop-filter: blur(50px);
+  padding: 44px 20px;
+}
+
+.pagecrm_popup__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 46.8px;
+  text-align: center;
+  color: #ffffff;
+  background-clip: text;
+  margin: 0;
+}
+
+.pagecrm_popup__subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.pagecrm_popup__input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 11px 0 11px 21px;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to right, rgba(56, 63, 236, 1), rgba(35, 255, 255, 1)) border-box;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.pagecrm_popup__input::placeholder {
+  color: #000;
+}
+
+.pagecrm_application__btn_popup {
+  width: 79%;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 20px;
+}

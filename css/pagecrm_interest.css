@@ -1,0 +1,63 @@
+.pagecrm_interest__title {
+  margin: 75px 0 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -2%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagecrm_interest__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagecrm_interest__list {
+  list-style: none;
+  border-radius: 20px 0px 0px 20px;
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+    90deg,
+    rgba(177, 149, 255, 0.7),
+    rgba(177, 149, 255, 0.42) 0.01%,
+    rgba(44, 48, 83, 0) 100%
+  );
+  padding: 22px 30px;
+}
+
+.pagecrm_interest__list-item {
+  display: flex;
+  column-gap: 5px;
+}
+
+.pagecrm_interest__check-img {
+  width: 40px;
+  object-fit: contain;
+}
+
+.pagecrm_interest__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.pagecrm_interest__smartphone {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .pagecrm_interest__smartphone {
+    display: block;
+    width: 291px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .pagecrm_interest__smartphone {
+    width: 491px;
+  }
+}
