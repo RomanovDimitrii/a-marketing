@@ -1,38 +1,40 @@
+.pagecrm_crm__img-block {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 .pagecrm_crm__title {
+  position: absolute;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -2%;
   text-align: center;
   text-transform: uppercase;
-  margin: 46px 0 20px 0;
-}
-
-.pagecrm_crm__img-block {
-  position: relative;
-  display: flex;
-  overflow-x: hidden;
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  justify-content: center;
-  align-items: center;
-  /* padding: 10px */
+  margin: 46px 0 0 0;
+  top: -30px;
 }
 
 .pagecrm_crm__img {
-  position: absolute;
   width: 300px;
-  height: 247px;
+  height: auto;
   object-fit: contain;
   z-index: 2;
+  margin: 16vw 0;
 }
 
 .pagecrm_crm__lines {
-  width: calc(100% + 20px); /* Увеличиваем ширину изображения */
-  margin-left: -10px; /* Смещение влево, чтобы выйти за границу padding */
-  margin-right: -10px; /* Смещение вправо, чтобы выйти за границу padding */
-  height: 100%;
+  position: absolute;
+  width: calc(100% + 20px);
+  width: 100%;
+  height: auto;
   z-index: 1;
   display: block;
   object-fit: cover;
@@ -66,22 +68,16 @@
 @media screen and (min-width: 361px) {
   .pagecrm_crm__title {
     font-size: 42px;
+    /* top: 20px; */
   }
 
   .pagecrm_crm__img-block {
-    /* padding: 15px;  */
+    padding: 15px;
   }
   .pagecrm_crm__lines {
-    left: -15px; /* Смещение влево на 10px, чтобы компенсировать padding */
-    right: -15px; /* Смещение вправо на 10px, чтобы компенсировать padding */
-    width: calc(100% + 30px); /* Учитываем padding родителя */
-    /* object-fit: fill;
-    
-    position: absolute;
-    height: auto;
-    margin-left: -15px;
-    margin-right: -15px;
-    width: calc(100% + 30px); */
+    left: -15px;
+    right: -15px;
+    width: calc(100% + 30px);
   }
 
   .pagecrm_crm__img {
@@ -89,25 +85,60 @@
     height: auto;
     object-fit: cover;
     z-index: 2;
-    /* width: 300px;
-    height: 247px; */
-    /* width: 100%;
-    height: auto;
-    object-fit: contain; */
-  }
-}
-@media screen and (min-width: 400px) {
-  .pagecrm_crm__img {
-    /* width: 300px;
-  height: 247px; */
-    /* width: 40%;
-    height: auto;
-    object-fit: contain; */
+    margin: 16vw 0;
   }
 }
 
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 759px) {
+  .pagecrm_crm__img-block {
+    margin: 0;
+  }
+
   .pagecrm_crm__img {
-    width: 50vw;
+    width: 42vw;
+    margin: 18vw 0;
+  }
+
+  .pagecrm_crm__lines {
+    top: -5vw;
+  }
+
+  .pagecrm_crm__title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 46px;
+    margin: 0;
+    top: 5vw;
+  }
+
+  .pagecrm_crm__btn {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .pagecrm_crm__btn {
+    transform: translateY(-5vw);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .pagecrm_crm__img {
+    margin: 18vw 0 15vw;
+  }
+  .pagecrm_crm__btn {
+    transform: translateY(-10vw);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .pagecrm_crm__img {
+    margin: 18vw 0 14vw;
   }
 }

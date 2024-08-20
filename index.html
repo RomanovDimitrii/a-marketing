@@ -14,6 +14,11 @@
     <header class="pagecrm_header">
       <div class="pagecrm_header__block">
         <img class="pagecrm_header__logo" src="./images/logo.svg" alt="Логотип Альфа маркетинг" />
+        <ul class="pagecrm_header__nav">
+          <li class="pagecrm_header__item">Услуги</li>
+          <li class="pagecrm_header__item">Кейсы</li>
+          <li class="pagecrm_header__item">Контакты</li>
+        </ul>
         <p class="pagecrm_header__phone">8 812 409-52-22</p>
       </div>
 
@@ -36,10 +41,10 @@
               <a class="pagecrm_menu__link" href="#contacts">Контакты</a>
             </li>
             <li class="pagecrm_menu__item">
-              <a class="pagecrm_menu__link" href="#">Связаться с нами</a>
+              <a class="pagecrm_menu__link" href="#applicationForm">Заполнить заявку</a>
             </li>
             <li class="pagecrm_menu__item">
-              <a class="pagecrm_menu__link" href="#">Партнеры</a>
+              <a class="pagecrm_menu__link" href="#partners">Партнеры</a>
             </li>
           </ul>
         </div>
@@ -53,13 +58,13 @@
       </nav>
     </header>
     <main class="pagecrm_main">
-      <h1 class="pagecrm_crm__title">crm</h1>
       <div class="pagecrm_crm__img-block">
+        <h1 class="pagecrm_crm__title">crm</h1>
         <img class="pagecrm_crm__img" src="./images/crm_img.svg" alt="crm" />
         <img class="pagecrm_crm__lines" src="./images/crm_lines.svg" alt="crm" />
       </div>
       <a class="pagecrm_crm__btn" type="button" href="#applicationForm"> Оставить заявку </a>
-      <h2 class="pagecrm_managing__title">Управление бизнес-процессами</h2>
+      <h2 class="pagecrm_title pagecrm_title_withought-margin">Управление бизнес-процессами</h2>
       <ul class="pagecrm_managing__features">
         <li class="pagecrm_managing__feat-item">
           <img
@@ -224,7 +229,7 @@
         <button class="pagecrm_application__btn" type="submit">Оставить заявку</button>
       </form>
 
-      <h2 class="pagecrm_interest__title">Кому полезна CRM</h2>
+      <h2 class="pagecrm_title">Кому полезна CRM</h2>
       <div class="pagecrm_interest__block">
         <ul class="pagecrm_interest__list">
           <li class="pagecrm_interest__list-item">
@@ -247,8 +252,8 @@
         <img class="pagecrm_interest__smartphone" src="./images/smartphone.png" alt="смартфон" />
       </div>
 
-      <h2 class="pagecrm_buisiness__title">CRM В БИЗНЕСЕ</h2>
-      <h3 class="pagecrm_buisiness__subtitle">Наши кейсы</h3>
+      <h2 class="pagecrm_title">CRM В БИЗНЕСЕ</h2>
+      <h3 class="pagecrm_subtitle">Наши кейсы</h3>
       <div class="pagecrm_buisiness__container">
         <div class="pagecrm_buisiness__case">
           <div class="pagecrm_buisiness__custoner-logo">
@@ -284,7 +289,7 @@
         </div>
       </div>
 
-      <h2 class="pagecrm_prices__title">Стоимость подключения</h2>
+      <h2 class="pagecrm_title">Стоимость подключения</h2>
       <div class="pagecrm_prices__group">
         <div class="pagecrm_prices__block">
           <div class="pagecrm_prices__price">
@@ -335,10 +340,8 @@
           <img class="pagecrm_prices__btn-image" src="./images/prices_arrow.svg" alt="стрелка" />
         </button>
       </div>
-      <h2 class="pagecrm_application__title pagecrm_application__title_second">
-        Заявка на подбор и подключение CRM-системы
-      </h2>
-      <h3 class="pagecrm_application__subtitle pagecrm_application__subtitle_second">
+      <h2 class="pagecrm_title">Заявка на подбор и подключение CRM-системы</h2>
+      <h3 class="pagecrm_subtitle pagecrm_application__subtitle_second">
         Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость
       </h3>
       <form class="pagecrm_application pagecrm_application_second">
@@ -383,7 +386,7 @@
         </button>
         <!-- </div> -->
       </form>
-      <h2 class="pagecrm_crm-partners__title">НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
+      <h2 class="pagecrm_title" id="partners">НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
       <div class="pagecrm_crm-partners__container">
         <img
           class="pagecrm_crm-partners__img"
@@ -425,8 +428,8 @@
         </div>
         <div class="pagecrm_contact-us__background">
           <form class="pagecrm_contact-us__form">
-            <input class="pagecrm_contact-us__input" type="text" placeholder="Имя*" />
-            <input class="pagecrm_contact-us__input" type="email" placeholder="@Почта*" />
+            <input class="pagecrm_contact-us__input" type="text" placeholder="Имя*" required />
+            <input class="pagecrm_contact-us__input" type="email" placeholder="@Почта*" required />
             <input
               class="pagecrm_contact-us__input"
               id="online_phone"
@@ -436,7 +439,11 @@
               placeholder="+7 (___) ___ - __ - __"
               value="+7(___)___-__-__"
             />
-            <textarea class="pagecrm_contact-us__input" placeholder="Задать вопрос"></textarea>
+            <textarea
+              class="pagecrm_contact-us__input"
+              placeholder="Задать вопрос"
+              required
+            ></textarea>
             <button class="pagecrm_application__btn pagecrm_application__btn_small" type="submit">
               задать вопрос
             </button>
@@ -447,7 +454,7 @@
     <footer class="pagecrm_footer">
       <div class="pagecrm_footer__block">
         <div class="pagecrm_footer__contacts">
-          <h2 class="pagecrm_footer__title" id="contacts">Контакты</h2>
+          <h2 class="pagecrm_title" id="contacts">Контакты</h2>
           <p class="pagecrm_footer__adress">
             Санкт-Петербург Заозёрная 8, к.2, офис 202 Пн-Пт, 10:00 - 18:00
             8&nbsp;(812)&nbsp;409-52-22
@@ -488,7 +495,7 @@
           placeholder="Ваш телефон"
           required
         />
-        <p class="input-error" id="phoneError"></p>
+        <!-- <p class="input-error" id="phoneError"></p> -->
         <input
           class="pagecrm_popup__input"
           type="email"
@@ -496,7 +503,7 @@
           placeholder="@Почта*"
           required
         />
-        <p class="input-error" id="phoneError"></p>
+        <!-- <p class="input-error" id="phoneError"></p> -->
 
         <button class="pagecrm_application__btn pagecrm_application__btn_popup" type="submit">
           Отправить заявку

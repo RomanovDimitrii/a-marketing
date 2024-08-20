@@ -116,10 +116,24 @@
     flex-direction: row;
     column-gap: 17px;
     width: 90%;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .pagecrm_prices__block {
     justify-content: space-between;
+    max-width: 406px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .pagecrm_prices__group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 17px;
+    width: 90%;
+  }
+
+  .pagecrm_prices__block {
+    max-width: 650px;
   }
 }

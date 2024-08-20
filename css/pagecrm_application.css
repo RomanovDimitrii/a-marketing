@@ -190,15 +190,10 @@
   border: 1px solid transparent;
 }
 
-.pagecrm_application__btn_small {
-  padding: 8.5px 0;
-  font-weight: 400;
-  line-height: 16px;
-  font-size: 14px;
-  letter-spacing: -1%;
-  width: 69%;
-  border: 1px solid transparent;
-  margin: 0 0 53px;
+@media screen and (min-width: 750px) {
+  .pagecrm_application__subtitle_second {
+    max-width: 370px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -213,10 +208,11 @@
   }
 
   .pagecrm_application_second {
-    background: linear-gradient(rgba(183, 126, 255, 1), rgba(183, 126, 255, 1)) padding-box,
-      linear-gradient(225deg, rgb(255, 255, 255), rgb(215, 149, 255), rgb(123, 194, 254)) border-box;
-
-    backdrop-filter: blur(50px);
     padding: 44px 18px;
+    max-width: 450px;
+  }
+
+  .pagecrm_application__subtitle_second {
+    max-width: 670px;
   }
 }

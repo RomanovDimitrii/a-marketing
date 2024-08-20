@@ -39,7 +39,7 @@
 
 .pagecrm_footer__map {
   margin: 75px 0 0;
-  max-width: 341px;
+  max-width: 311px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 20px 0px rgba(215, 149, 255, 1);
@@ -73,6 +73,12 @@
   margin: 21px 0 90px;
 }
 
+@media screen and (min-width: 360px) {
+  .pagecrm_footer__map {
+    max-width: 341px;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .pagecrm_footer__block {
     display: flex;
@@ -85,5 +91,12 @@
     flex-direction: column;
     width: 50%;
     align-items: start;
+  }
+
+  .pagecrm_footer__adress {
+    margin: 0 17px 0 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
   }
 }

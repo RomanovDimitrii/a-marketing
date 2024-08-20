@@ -38,7 +38,7 @@
 .pagecrm_menu__link:hover {
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
-  text-shadow: rgba(215, 149, 255, 1) 1px 0 10px;
+
   text-shadow: rgba(255, 255, 255, 1) 1px 0 10px;
 }
 

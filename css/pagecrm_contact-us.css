@@ -25,6 +25,7 @@
   background-position: left;
   background-position: bottom;
   background-repeat: no-repeat;
+  margin-top: 35px;
 }
 
 .pagecrm_contact-us__form {
@@ -55,6 +56,17 @@
 
 .pagecrm_contact-us__input::placeholder {
   color: #383838;
+}
+
+.pagecrm_application__btn_small {
+  padding: 8.5px 0;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+  letter-spacing: -1%;
+  width: 69%;
+  border: 1px solid transparent;
+  margin: 4px 0 11px;
 }
 
 @media screen and (min-width: 450px) {
@@ -129,6 +141,7 @@
     font-weight: 400;
     line-height: 60px;
     margin: 105px 0 0 10px;
+    text-align: left;
   }
 
   .pagecrm_contact-us__subtitle {
@@ -137,5 +150,29 @@
     line-height: 30px;
     margin: 0 0 10px 10px;
     max-width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .pagecrm_contact-us__subtitle {
+    max-width: 30vw;
+  }
+
+  .pagecrm_contact-us__input {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 100%;
+    margin: 10px 0 28.75px;
+  }
+
+  .pagecrm_application__btn_small {
+    padding: 14.5px 10px;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 24px;
+    width: 69%;
+    border: 2px solid transparent;
+    margin: 15px 0 28px;
   }
 }
