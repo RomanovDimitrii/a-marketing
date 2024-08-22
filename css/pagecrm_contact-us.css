@@ -81,7 +81,7 @@
 
 @media screen and (min-width: 500px) {
   .pagecrm_contact-us__form {
-    max-width: 380px;
+    max-width: 330px;
     margin-bottom: 10vw;
   }
 
@@ -118,8 +118,8 @@
   }
 
   .pagecrm_contact-us__form {
-    max-width: 380px;
-    margin-bottom: 14vw;
+    max-width: 330px;
+    margin: 0 45.3px 14vw 6vw;
   }
 
   .pagecrm_contact-us__background {
@@ -174,5 +174,11 @@
     width: 69%;
     border: 2px solid transparent;
     margin: 15px 0 28px;
+  }
+}
+
+@media screen and (min-width: 3800px) {
+  .pagecrm_contact-us__form {
+    margin: 0 45.3px 9vw 6vw;
   }
 }

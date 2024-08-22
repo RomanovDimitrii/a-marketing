@@ -1,13 +1,18 @@
 .pagecrm_crm__img-block {
   position: relative;
   display: flex;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
+  /* overflow: hidden; */
+  width: 100vw;
+  /* height: auto; */
+  height: 70vw;
   margin: 20px 0;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  background-image: url('../images/crm_lines.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateX(-10px);
 }
 
 .pagecrm_crm__title {
@@ -27,7 +32,7 @@
   height: auto;
   object-fit: contain;
   z-index: 2;
-  margin: 16vw 0;
+  margin: 0;
 }
 
 .pagecrm_crm__lines {
@@ -38,7 +43,7 @@
   z-index: 1;
   display: block;
   object-fit: cover;
-  transform: translateX(-10px); /* Смещение изображения влево */
+  transform: translateX(-10px);
 }
 
 .pagecrm_crm__btn {
@@ -72,20 +77,7 @@
   }
 
   .pagecrm_crm__img-block {
-    padding: 15px;
-  }
-  .pagecrm_crm__lines {
-    left: -15px;
-    right: -15px;
-    width: calc(100% + 30px);
-  }
-
-  .pagecrm_crm__img {
-    width: 70vw;
-    height: auto;
-    object-fit: cover;
-    z-index: 2;
-    margin: 16vw 0;
+    transform: translateX(-15px);
   }
 }
 
@@ -95,12 +87,8 @@
   }
 
   .pagecrm_crm__img {
-    width: 42vw;
-    margin: 18vw 0;
-  }
-
-  .pagecrm_crm__lines {
-    top: -5vw;
+    width: 30vw;
+    margin: 0 0;
   }
 
   .pagecrm_crm__title {
@@ -125,6 +113,11 @@
 @media screen and (min-width: 1000px) {
   .pagecrm_crm__btn {
     transform: translateY(-5vw);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pagecrm_crm__img-block {
+    background-image: url('../images/crm_lines1600.svg');
   }
 }
 

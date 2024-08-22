@@ -17,11 +17,25 @@
   object-fit: contain;
 }
 
+.pagecrm_header__tel-block {
+  display: flex;
+
+  justify-content: center;
+}
+
+.pagecrm_header__tel-img {
+  display: none;
+}
+
 .pagecrm_header__phone {
   font-family: 'Inter';
   font-size: 11px;
   font-weight: 500;
   line-height: 13.3px;
+}
+
+.pagecrm_header__nav {
+  display: none;
 }
 
 .pagecrm_nav {
@@ -143,7 +157,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .pagecrm_header {
     width: 100vw;
     background-color: rgba(29, 1, 65, 0.3);
@@ -153,6 +167,12 @@
     width: 142px;
     object-fit: contain;
     margin: 10px 15px;
+  }
+
+  .pagecrm_header__tel-img {
+    display: block;
+    width: 18px;
+    object-fit: contain;
   }
 
   .pagecrm_header__phone {
@@ -181,6 +201,7 @@
     padding: 0;
     margin: 0;
     color: rgba(233, 222, 255, 1);
+    text-decoration: none;
   }
 
   .pagecrm_header__item:hover {

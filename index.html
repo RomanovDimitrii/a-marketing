@@ -15,11 +15,20 @@
       <div class="pagecrm_header__block">
         <img class="pagecrm_header__logo" src="./images/logo.svg" alt="Логотип Альфа маркетинг" />
         <ul class="pagecrm_header__nav">
-          <li class="pagecrm_header__item">Услуги</li>
-          <li class="pagecrm_header__item">Кейсы</li>
-          <li class="pagecrm_header__item">Контакты</li>
+          <li>
+            <a class="pagecrm_header__item" href="#services">Услуги</a>
+          </li>
+          <li>
+            <a class="pagecrm_header__item" href="#cases">Кейсы</a>
+          </li>
+          <li>
+            <a class="pagecrm_header__item" href="#contacts">Контакты</a>
+          </li>
         </ul>
-        <p class="pagecrm_header__phone">8 812 409-52-22</p>
+        <div class="pagecrm_header__tel-block">
+          <img class="pagecrm_header__tel-img" src="./images/tel_img.svg" />
+          <p class="pagecrm_header__phone">8 812 409-52-22</p>
+        </div>
       </div>
 
       <nav class="pagecrm_nav">
@@ -61,7 +70,7 @@
       <div class="pagecrm_crm__img-block">
         <h1 class="pagecrm_crm__title">crm</h1>
         <img class="pagecrm_crm__img" src="./images/crm_img.svg" alt="crm" />
-        <img class="pagecrm_crm__lines" src="./images/crm_lines.svg" alt="crm" />
+        <!-- <img class="pagecrm_crm__lines" src="./images/crm_lines.svg" alt="crm" /> -->
       </div>
       <a class="pagecrm_crm__btn" type="button" href="#applicationForm"> Оставить заявку </a>
       <h2 class="pagecrm_title pagecrm_title_withought-margin">Управление бизнес-процессами</h2>
@@ -215,7 +224,7 @@
         <div class="pagecrm_application__select-block">
           <select class="pagecrm_select" type="text" id="select1" required>
             <option disabled>Выберите систему</option>
-            <option value="amoCRM">AamoCRM</option>
+            <option value="amoCRM">AmoCRM</option>
             <option value="Bitrix24">Bitrix24</option>
           </select>
         </div>
@@ -252,7 +261,7 @@
         <img class="pagecrm_interest__smartphone" src="./images/smartphone.png" alt="смартфон" />
       </div>
 
-      <h2 class="pagecrm_title">CRM В БИЗНЕСЕ</h2>
+      <h2 class="pagecrm_title" id="cases">CRM В БИЗНЕСЕ</h2>
       <h3 class="pagecrm_subtitle">Наши кейсы</h3>
       <div class="pagecrm_buisiness__container">
         <div class="pagecrm_buisiness__case">
@@ -289,7 +298,7 @@
         </div>
       </div>
 
-      <h2 class="pagecrm_title">Стоимость подключения</h2>
+      <h2 class="pagecrm_title" id="services">Стоимость подключения</h2>
       <div class="pagecrm_prices__group">
         <div class="pagecrm_prices__block">
           <div class="pagecrm_prices__price">
