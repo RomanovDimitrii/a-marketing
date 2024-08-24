@@ -12,14 +12,30 @@
   </head>
   <body class="pagecrm_page">
     <header class="pagecrm_header">
-      <img class="pagecrm_header__logo" src="./images/logo.svg" alt="Логотип Альфа маркетинг" />
-      <p class="pagecrm_header__phone">8 812 409-52-22</p>
-    </header>
-    <main class="pagecrm_main">
+      <div class="pagecrm_header__block">
+        <img class="pagecrm_header__logo" src="./images/logo.svg" alt="Логотип Альфа маркетинг" />
+        <ul class="pagecrm_header__nav">
+          <li>
+            <a class="pagecrm_header__item" href="#services">Услуги</a>
+          </li>
+          <li>
+            <a class="pagecrm_header__item" href="#cases">Кейсы</a>
+          </li>
+          <li>
+            <a class="pagecrm_header__item" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <div class="pagecrm_header__tel-block">
+          <img class="pagecrm_header__tel-img" src="./images/tel_img.svg" />
+          <p class="pagecrm_header__phone">8 812 409-52-22</p>
+        </div>
+      </div>
+
       <nav class="pagecrm_nav">
         <div class="pagecrm_nav-block">
           <img class="pagecrm_nav-block__burger" src="./images/burger.svg" alt="Меню" />
           <form class="pagecrm_nav-block__form">
+            <input class="pagecrm_nav-block__input" />
             <button class="pagecrm_nav-block__search-button" type="submit">
               <img
                 class="pagecrm_nav-block__search-button-image"
@@ -27,18 +43,17 @@
                 alt="Поиск"
               />
             </button>
-            <input class="pagecrm_nav-block__input" />
           </form>
           <!-- popup menu -->
           <ul class="pagecrm_menu" id="popup_menu">
             <li class="pagecrm_menu__item">
-              <a class="pagecrm_menu__link" href="#">Контакты</a>
+              <a class="pagecrm_menu__link" href="#contacts">Контакты</a>
             </li>
             <li class="pagecrm_menu__item">
-              <a class="pagecrm_menu__link" href="#">Связаться с нами</a>
+              <a class="pagecrm_menu__link" href="#applicationForm">Заполнить заявку</a>
             </li>
             <li class="pagecrm_menu__item">
-              <a class="pagecrm_menu__link" href="#">Партнеры</a>
+              <a class="pagecrm_menu__link" href="#partners">Партнеры</a>
             </li>
           </ul>
         </div>
@@ -50,13 +65,15 @@
           <a class="pagecrm_nav-block__links" href="">CRM</a>
         </div>
       </nav>
-      <h1 class="pagecrm_crm__title">crm</h1>
+    </header>
+    <main class="pagecrm_main">
       <div class="pagecrm_crm__img-block">
+        <h1 class="pagecrm_crm__title">crm</h1>
         <img class="pagecrm_crm__img" src="./images/crm_img.svg" alt="crm" />
-        <img class="pagecrm_crm__lines" src="./images/crm_lines.svg" alt="crm" />
+        <!-- <img class="pagecrm_crm__lines" src="./images/crm_lines.svg" alt="crm" /> -->
       </div>
       <a class="pagecrm_crm__btn" type="button" href="#applicationForm"> Оставить заявку </a>
-      <h2 class="pagecrm_managing__title">Управление бизнес-процессами</h2>
+      <h2 class="pagecrm_title pagecrm_title_withought-margin">Управление бизнес-процессами</h2>
       <ul class="pagecrm_managing__features">
         <li class="pagecrm_managing__feat-item">
           <img
@@ -207,7 +224,7 @@
         <div class="pagecrm_application__select-block">
           <select class="pagecrm_select" type="text" id="select1" required>
             <option disabled>Выберите систему</option>
-            <option value="amoCRM">AamoCRM</option>
+            <option value="amoCRM">AmoCRM</option>
             <option value="Bitrix24">Bitrix24</option>
           </select>
         </div>
@@ -221,89 +238,100 @@
         <button class="pagecrm_application__btn" type="submit">Оставить заявку</button>
       </form>
 
-      <h2 class="pagecrm_interest__title">Кому полезна CRM</h2>
-      <ul class="pagecrm_interest__list">
-        <li class="pagecrm_interest__list-item">
-          <img class="pagecrm_interest__check-img" src="./images/check_square.webp" alt="галка" />
-          <p class="pagecrm_interest__text">Любому бизнесу, работающему с клиентской базой</p>
-        </li>
-        <li class="pagecrm_interest__list-item">
-          <img class="pagecrm_interest__check-img" src="./images/check_square.webp" alt="галка" />
-          <p class="pagecrm_interest__text">
-            На компьютер, подключите гарнитуру и звоните прямо из CRM одним кликом
-          </p>
-        </li>
-        <li class="pagecrm_interest__list-item">
-          <img class="pagecrm_interest__check-img" src="./images/check_square.webp" alt="галка" />
-          <p class="pagecrm_interest__text">
-            На компьютер, подключите гарнитуру и звоните прямо из CRM одним кликом
-          </p>
-        </li>
-      </ul>
-
-      <h2 class="pagecrm_buisiness__title">CRM В БИЗНЕСЕ</h2>
-      <h3 class="pagecrm_buisiness__subtitle">Наши кейсы</h3>
-      <div class="pagecrm_buisiness__case">
-        <div class="pagecrm_buisiness__custoner-logo">
-          <img
-            class="pagecrm_buisiness__logo"
-            src="./images/lesokombinat.webp"
-            alt="Пестовский лесокомбинат"
-          />
-          <p class="pagecrm_buisiness__custoner-location">г. Санкт-Петербург</p>
-        </div>
-        <p class="pagecrm_buisiness__custoner-info">“Пестовский Лесокомбинат”</p>
-        <p class="pagecrm_buisiness__custoner-about">Строительная компания</p>
-        <p class="pagecrm_buisiness__custoner-crm">Работают на платформе amoCRM</p>
-        <button class="pagecrm_buisiness__btn" type="button">Подробнее</button>
-      </div>
-      <div class="pagecrm_buisiness__case">
-        <div class="pagecrm_buisiness__custoner-logo">
-          <img
-            class="pagecrm_buisiness__logo"
-            src="./images/mongol.webp"
-            alt="Магазин Монгол стор"
-          />
-          <p class="pagecrm_buisiness__custoner-location">Россия</p>
-        </div>
-        <p class="pagecrm_buisiness__custoner-info">Магазин “Mongol Store”</p>
-        <p class="pagecrm_buisiness__custoner-about">Одежда из натуральной шерсти</p>
-        <p class="pagecrm_buisiness__custoner-crm">Используют БитриксCRM</p>
-        <button class="pagecrm_buisiness__btn" type="button">Подробнее</button>
+      <h2 class="pagecrm_title">Кому полезна CRM</h2>
+      <div class="pagecrm_interest__block">
+        <ul class="pagecrm_interest__list">
+          <li class="pagecrm_interest__list-item">
+            <img class="pagecrm_interest__check-img" src="./images/check_square.webp" alt="галка" />
+            <p class="pagecrm_interest__text">Любому бизнесу, работающему с клиентской базой</p>
+          </li>
+          <li class="pagecrm_interest__list-item">
+            <img class="pagecrm_interest__check-img" src="./images/check_square.webp" alt="галка" />
+            <p class="pagecrm_interest__text">
+              На компьютер, подключите гарнитуру и звоните прямо из CRM одним кликом
+            </p>
+          </li>
+          <li class="pagecrm_interest__list-item">
+            <img class="pagecrm_interest__check-img" src="./images/check_square.webp" alt="галка" />
+            <p class="pagecrm_interest__text">
+              На компьютер, подключите гарнитуру и звоните прямо из CRM одним кликом
+            </p>
+          </li>
+        </ul>
+        <img class="pagecrm_interest__smartphone" src="./images/smartphone.png" alt="смартфон" />
       </div>
 
-      <h2 class="pagecrm_prices__title">Стоимость подключения</h2>
-      <div class="pagecrm_prices__block">
-        <div class="pagecrm_prices__price">
-          <p class="pagecrm_prices__service">Подключение системы CRM</p>
-          <p class="pagecrm_prices__sum">от&nbsp;10&nbsp;000&nbsp;&#x20bd;</p>
+      <h2 class="pagecrm_title" id="cases">CRM В БИЗНЕСЕ</h2>
+      <h3 class="pagecrm_subtitle">Наши кейсы</h3>
+      <div class="pagecrm_buisiness__container">
+        <div class="pagecrm_buisiness__case">
+          <div class="pagecrm_buisiness__custoner-logo">
+            <img
+              class="pagecrm_buisiness__logo"
+              src="./images/lesokombinat.webp"
+              alt="Пестовский лесокомбинат"
+            />
+            <p class="pagecrm_buisiness__custoner-location">г. Санкт-Петербург</p>
+          </div>
+          <div class="pagecrm_buisiness_info-block">
+            <p class="pagecrm_buisiness__custoner-info">“Пестовский Лесокомбинат”</p>
+            <p class="pagecrm_buisiness__custoner-about">Строительная компания</p>
+            <p class="pagecrm_buisiness__custoner-crm">Работают на платформе amoCRM</p>
+            <button class="pagecrm_buisiness__btn" type="button">Подробнее</button>
+          </div>
         </div>
-        <div class="pagecrm_prices__options">
-          <img class="pagecrm_prices_check" src="./images/check_circle.svg" alt="галка" />
-          <p class="pagecrm_prices_text">Покупка любого тарифа со скидкой</p>
+        <div class="pagecrm_buisiness__case">
+          <div class="pagecrm_buisiness__custoner-logo">
+            <img
+              class="pagecrm_buisiness__logo"
+              src="./images/mongol.webp"
+              alt="Магазин Монгол стор"
+            />
+            <p class="pagecrm_buisiness__custoner-location">Россия</p>
+          </div>
+          <div class="pagecrm_buisiness_info-block">
+            <p class="pagecrm_buisiness__custoner-info">Магазин “Mongol Store”</p>
+            <p class="pagecrm_buisiness__custoner-about">Одежда из натуральной шерсти</p>
+            <p class="pagecrm_buisiness__custoner-crm">Используют БитриксCRM</p>
+            <button class="pagecrm_buisiness__btn" type="button">Подробнее</button>
+          </div>
         </div>
-        <button class="pagecrm_prices__btn" type="button">
-          Заказать
-          <img class="pagecrm_prices__btn-image" src="./images/prices_arrow.svg" alt="стрелка" />
-        </button>
       </div>
-      <div class="pagecrm_prices__block">
-        <div class="pagecrm_prices__price">
-          <p class="pagecrm_prices__service">Подключение системы CRM + настройка</p>
-          <p class="pagecrm_prices__sum">от&nbsp;15&nbsp;000&nbsp;&#x20bd;</p>
+
+      <h2 class="pagecrm_title" id="services">Стоимость подключения</h2>
+      <div class="pagecrm_prices__group">
+        <div class="pagecrm_prices__block">
+          <div class="pagecrm_prices__price">
+            <p class="pagecrm_prices__service">Подключение системы CRM</p>
+            <p class="pagecrm_prices__sum">от&nbsp;10&nbsp;000&nbsp;&#x20bd;</p>
+          </div>
+          <div class="pagecrm_prices__options pagecrm_prices__options_margin">
+            <img class="pagecrm_prices_check" src="./images/check_circle.svg" alt="галка" />
+            <p class="pagecrm_prices__text">Покупка любого тарифа со скидкой</p>
+          </div>
+          <button class="pagecrm_prices__btn" type="button">
+            Заказать
+            <img class="pagecrm_prices__btn-image" src="./images/prices_arrow.svg" alt="стрелка" />
+          </button>
         </div>
-        <div class="pagecrm_prices__options">
-          <img class="pagecrm_prices_check" src="./images/check_circle.svg" alt="галка" />
-          <p class="pagecrm_prices_text">Покупка любого тарифа со скидкой</p>
+        <div class="pagecrm_prices__block">
+          <div class="pagecrm_prices__price">
+            <p class="pagecrm_prices__service">Подключение системы CRM + настройка</p>
+            <p class="pagecrm_prices__sum">от&nbsp;15&nbsp;000&nbsp;&#x20bd;</p>
+          </div>
+          <div class="pagecrm_prices__options">
+            <img class="pagecrm_prices_check" src="./images/check_circle.svg" alt="галка" />
+            <p class="pagecrm_prices__text">Покупка любого тарифа со скидкой</p>
+          </div>
+          <div class="pagecrm_prices__options">
+            <img class="pagecrm_prices_check" src="./images/check_circle.svg" alt="галка" />
+            <p class="pagecrm_prices__text">Индивидуальная настройка системы</p>
+          </div>
+          <button class="pagecrm_prices__btn" type="button">
+            Заказать
+            <img class="pagecrm_prices__btn-image" src="./images/prices_arrow.svg" alt="стрелка" />
+          </button>
         </div>
-        <div class="pagecrm_prices__options">
-          <img class="pagecrm_prices_check" src="./images/check_circle.svg" alt="галка" />
-          <p class="pagecrm_prices_text">Индивидуальная настройка системы</p>
-        </div>
-        <button class="pagecrm_prices__btn" type="button">
-          Заказать
-          <img class="pagecrm_prices__btn-image" src="./images/prices_arrow.svg" alt="стрелка" />
-        </button>
       </div>
       <div class="pagecrm_prices__block">
         <div class="pagecrm_prices__price">
@@ -312,7 +340,7 @@
         </div>
         <div class="pagecrm_prices__options">
           <img class="pagecrm_prices_check" src="./images/check_circle.svg" alt="галка" />
-          <p class="pagecrm_prices_text">
+          <p class="pagecrm_prices__text">
             Возможность продления лицензий со скидкой от официальных цен
           </p>
         </div>
@@ -321,13 +349,12 @@
           <img class="pagecrm_prices__btn-image" src="./images/prices_arrow.svg" alt="стрелка" />
         </button>
       </div>
-      <h2 class="pagecrm_application__title pagecrm_application__title_second">
-        Заявка на подбор и подключение CRM-системы
-      </h2>
-      <h3 class="pagecrm_application__subtitle pagecrm_application__subtitle_second">
+      <h2 class="pagecrm_title">Заявка на подбор и подключение CRM-системы</h2>
+      <h3 class="pagecrm_subtitle pagecrm_application__subtitle_second">
         Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость
       </h3>
       <form class="pagecrm_application pagecrm_application_second">
+        <!-- <div class="pagecrm_application__block"> -->
         <h2 class="pagecrm_application__title pagecrm_application__title_violet">
           Заполните форму
         </h2>
@@ -366,74 +393,92 @@
         <button class="pagecrm_application__btn pagecrm_application__btn_second" type="submit">
           Оставить заявку
         </button>
+        <!-- </div> -->
       </form>
-      <h2 class="pagecrm_crm-partners__title">НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
-      <img
-        class="pagecrm_crm-partners__img"
-        src="./images/partners_img.webp"
-        alt="Битрикс и AmoCRM"
-      />
-      <div class="pagecrm_crm-partners__bcgr-gradient"></div>
-      <div class="pagecrm_crm-partners__partner-block">
-        <p class="pagecrm_crm-partners__partner-name">Битрикс24 (Управление бизнесом)</p>
-        <a class="pagecrm_crm-partners__link" href="https://www.bitrix24.ru/" target="_blank">
-          <img
-            class="pagecrm_crm-partners__link-img"
-            src="./images/arrow_right.svg"
-            alt="перейти на сайт Битрикс"
-          />
-        </a>
+      <h2 class="pagecrm_title" id="partners">НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
+      <div class="pagecrm_crm-partners__container">
+        <img
+          class="pagecrm_crm-partners__img"
+          src="./images/partners_img.webp"
+          alt="Битрикс и AmoCRM"
+        />
+        <div class="pagecrm_crm-partners__group">
+          <div class="pagecrm_crm-partners__bcgr-gradient"></div>
+          <div class="pagecrm_crm-partners__partner-block">
+            <p class="pagecrm_crm-partners__partner-name">Битрикс24 (Управление бизнесом)</p>
+            <a class="pagecrm_crm-partners__link" href="https://www.bitrix24.ru/" target="_blank">
+              <img
+                class="pagecrm_crm-partners__link-img"
+                src="./images/arrow_right.svg"
+                alt="перейти на сайт Битрикс"
+              />
+            </a>
+          </div>
+          <div class="pagecrm_crm-partners__bcgr-gradient"></div>
+          <div class="pagecrm_crm-partners__partner-block">
+            <p class="pagecrm_crm-partners__partner-name">amoCRM (Управление бизнесом)</p>
+            <a class="pagecrm_crm-partners__link" href="https://www.amocrm.ru/" target="_blank">
+              <img
+                class="pagecrm_crm-partners__link-img"
+                src="./images/arrow_right.svg"
+                alt="перейти на сайт Битрикс"
+              />
+            </a>
+          </div>
+          <div class="pagecrm_crm-partners__bcgr-gradient"></div>
+        </div>
       </div>
-      <div class="pagecrm_crm-partners__bcgr-gradient"></div>
-      <div class="pagecrm_crm-partners__partner-block">
-        <p class="pagecrm_crm-partners__partner-name">amoCRM (Управление бизнесом)</p>
-        <a class="pagecrm_crm-partners__link" href="https://www.amocrm.ru/" target="_blank">
-          <img
-            class="pagecrm_crm-partners__link-img"
-            src="./images/arrow_right.svg"
-            alt="перейти на сайт Битрикс"
-          />
-        </a>
-      </div>
-      <div class="pagecrm_crm-partners__bcgr-gradient"></div>
-      <h2 class="pagecrm_contact-us__title">Напишите нам!</h2>
-      <h3 class="pagecrm_contact-us__subtitle">
-        Заполните заявку и Мы свяжемся с Вами в течение 15 минут
-      </h3>
-      <div class="pagecrm_contact-us__background">
-        <form class="pagecrm_contact-us__form">
-          <input class="pagecrm_contact-us__input" type="text" placeholder="Имя*" />
-          <input class="pagecrm_contact-us__input" type="email" placeholder="@Почта*" />
-          <input
-            class="pagecrm_contact-us__input"
-            id="online_phone"
-            required="required"
-            name="phone"
-            type="tel"
-            placeholder="+7 (___) ___ - __ - __"
-            value="+7(___)___-__-__"
-          />
-          <textarea class="pagecrm_contact-us__input" placeholder="Задать вопрос"></textarea>
-          <button class="pagecrm_application__btn pagecrm_application__btn_small" type="submit">
-            задать вопрос
-          </button>
-        </form>
-      </div>
+      <section class="pagecrm_contact-us">
+        <div class="pagecrm_contact-us__text-block">
+          <h2 class="pagecrm_contact-us__title">Напишите нам!</h2>
+          <h3 class="pagecrm_contact-us__subtitle">
+            Заполните заявку и Мы свяжемся с Вами в течение 15 минут
+          </h3>
+        </div>
+        <div class="pagecrm_contact-us__background">
+          <form class="pagecrm_contact-us__form">
+            <input class="pagecrm_contact-us__input" type="text" placeholder="Имя*" required />
+            <input class="pagecrm_contact-us__input" type="email" placeholder="@Почта*" required />
+            <input
+              class="pagecrm_contact-us__input"
+              id="online_phone"
+              required="required"
+              name="phone"
+              type="tel"
+              placeholder="+7 (___) ___ - __ - __"
+              value="+7(___)___-__-__"
+            />
+            <textarea
+              class="pagecrm_contact-us__input"
+              placeholder="Задать вопрос"
+              required
+            ></textarea>
+            <button class="pagecrm_application__btn pagecrm_application__btn_small" type="submit">
+              задать вопрос
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="pagecrm_footer">
-      <h2 class="pagecrm_footer__title">Контакты</h2>
-      <p class="pagecrm_footer__adress">
-        Санкт-Петербург Заозёрная 8, к.2, офис 202 Пн-Пт, 10:00 - 18:00 8&nbsp;(812)&nbsp;409-52-22
-      </p>
-      <p class="pagecrm_footer__adress pagecrm_footer__adress_email">info@alpham.pro</p>
-      <!-- <img class="pagecrm_footer__map" src="/images/map_img.webp" alt="карта" /> -->
-      <div class="pagecrm_footer__map">
-        <script
-          type="text/javascript"
-          charset="utf-8"
-          async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae57b793c4b3958d24788555655c2714609936a1a4fbe5e7f524f4063bdcf3939&amp;width=360&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
-        ></script>
+      <div class="pagecrm_footer__block">
+        <div class="pagecrm_footer__contacts">
+          <h2 class="pagecrm_title" id="contacts">Контакты</h2>
+          <p class="pagecrm_footer__adress">
+            Санкт-Петербург Заозёрная 8, к.2, офис 202 Пн-Пт, 10:00 - 18:00
+            8&nbsp;(812)&nbsp;409-52-22
+          </p>
+          <p class="pagecrm_footer__adress pagecrm_footer__adress_email">info@alpham.pro</p>
+        </div>
+
+        <div class="pagecrm_footer__map">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae57b793c4b3958d24788555655c2714609936a1a4fbe5e7f524f4063bdcf3939&amp;width=360&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
       </div>
       <img class="pagecrm_footer__logo-alpha" src="./images/alfa_logo.webp" alt="Альфа маркетинг" />
       <div class="pagecrm_footer__messengers">
@@ -459,7 +504,7 @@
           placeholder="Ваш телефон"
           required
         />
-        <p class="input-error" id="phoneError"></p>
+        <!-- <p class="input-error" id="phoneError"></p> -->
         <input
           class="pagecrm_popup__input"
           type="email"
@@ -467,7 +512,7 @@
           placeholder="@Почта*"
           required
         />
-        <p class="input-error" id="phoneError"></p>
+        <!-- <p class="input-error" id="phoneError"></p> -->
 
         <button class="pagecrm_application__btn pagecrm_application__btn_popup" type="submit">
           Отправить заявку

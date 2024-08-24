@@ -1,5 +1,16 @@
 @import url(./vendor/normalize.css);
 @import url(/vendor/fonts.css);
 @import url(./css/pagecrm.css);
+@import url(./css/pagecrm_header.css);
+@import url(./css/pagecrm_crm.css);
+@import url(./css/pagecrm_interest.css);
+@import url(./css/pagecrm_buisiness.css);
+@import url(./css/pagecrm_prices.css);
+@import url(./css/pagecrm_managing.css);
+@import url(./css/pagecrm_application.css);
+@import url(./css/pagecrm_partners.css);
 @import url(./css/pagecrm_select.css);
+@import url(./css/pagecrm_contact-us.css);
+@import url(./css/pagecrm_footer.css);
 @import url(./css/pagecrm_menu.css);
+@import url(./css/pagecrm_popup.css);

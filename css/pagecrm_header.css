@@ -1,0 +1,212 @@
+.pagecrm_header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagecrm_header__block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagecrm_header__logo {
+  width: 102px;
+  object-fit: contain;
+}
+
+.pagecrm_header__tel-block {
+  display: flex;
+
+  justify-content: center;
+}
+
+.pagecrm_header__tel-img {
+  display: none;
+}
+
+.pagecrm_header__phone {
+  font-family: 'Inter';
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13.3px;
+}
+
+.pagecrm_header__nav {
+  display: none;
+}
+
+.pagecrm_nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pagecrm_nav-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.pagecrm_nav-block__burger {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.pagecrm_nav-block__form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.pagecrm_nav-block__search-button {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 5px;
+  left: 30px;
+  width: 12px;
+  height: 12px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.pagecrm_nav-block__input {
+  box-sizing: border-box;
+  padding: 0 0 0 30px;
+  height: 25px;
+  width: 100%;
+
+  margin-left: 17px;
+  background: linear-gradient(rgba(183, 126, 255, 0.9), rgba(183, 126, 255, 0.9)) padding-box,
+    linear-gradient(to right, #ffffff, #9e95ff, #ffffff) border-box;
+  border: 1px solid transparent;
+
+  border-radius: 10px;
+  color: white;
+}
+
+.pagecrm_nav-block__link-block {
+  display: flex;
+  margin: 17px 0 0;
+}
+
+.pagecrm_nav-block__links {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.pagecrm_nav-block__arrow {
+  width: 5px;
+  height: 8.7px;
+  object-fit: cover;
+  margin: 0 7px;
+}
+
+@media screen and (min-width: 361px) {
+  .pagecrm_header__logo {
+    width: 132px;
+  }
+
+  .pagecrm_header__phone {
+    font-size: 16px;
+  }
+
+  .pagecrm_nav-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .pagecrm_nav-block__form {
+    position: relative;
+    width: 90%;
+    display: flex;
+  }
+
+  .pagecrm_nav-block__burger {
+    width: 40px;
+    height: 30px;
+  }
+
+  .pagecrm_nav-block__search-button {
+    top: 8px;
+    /* left: 30px; */
+    width: 15px;
+    height: 15px;
+  }
+
+  .pagecrm_nav-block__input {
+    height: 30px;
+    width: 100%;
+    margin-left: 17px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .pagecrm_header {
+    width: 100vw;
+    background-color: rgba(29, 1, 65, 0.3);
+  }
+
+  .pagecrm_header__logo {
+    width: 142px;
+    object-fit: contain;
+    margin: 10px 15px;
+  }
+
+  .pagecrm_header__tel-img {
+    display: block;
+    width: 18px;
+    object-fit: contain;
+  }
+
+  .pagecrm_header__phone {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    margin: 0 20px 0;
+  }
+  .pagecrm_nav {
+    display: none;
+  }
+
+  .pagecrm_header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    column-gap: 36px;
+  }
+
+  .pagecrm_header__item {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    color: rgba(233, 222, 255, 1);
+    text-decoration: none;
+  }
+
+  .pagecrm_header__item:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(255, 255, 255, 1) 1px 0 10px;
+  }
+}

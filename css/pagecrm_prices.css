@@ -1,0 +1,139 @@
+.pagecrm_prices__title {
+  margin: 75px 0 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.pagecrm_prices__block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(215, 149, 255, 1);
+  background: linear-gradient(to right, #110b31, #1e0044);
+  padding: 15px 10px 0;
+  margin: 45px 0 0;
+}
+
+.pagecrm_prices__price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0 10px;
+  background: rgba(158, 0, 255, 0.15);
+}
+
+.pagecrm_prices__service {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.pagecrm_prices__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.pagecrm_prices__text {
+  font-size: 16px;
+  margin: 0 0 0;
+}
+
+.pagecrm_prices__sum {
+  background: linear-gradient(157.31deg, rgb(177, 149, 255), rgb(215, 149, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.pagecrm_prices__options {
+  display: flex;
+  margin: 20px 0 0;
+  column-gap: 10px;
+}
+
+.pagecrm_prices__options_margin {
+  margin: 20px 0 40px;
+}
+
+.pagecrm_prices__btn {
+  margin: 20px 0 26px;
+  padding: 20px 0;
+  align-self: center;
+  font-size: 16px;
+  letter-spacing: -1%;
+  line-height: 18.5px;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 20px 48px;
+  color: #ffffff;
+  background: linear-gradient(rgb(30, 0, 68), rgb(30, 0, 68)) padding-box,
+    linear-gradient(90deg, rgb(56, 63, 236), rgb(35, 255, 255)) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 3.15px 0px rgba(162, 45, 247, 0.1), 0px 0px 6.52px 0px rgba(162, 45, 247, 0.1),
+    0px 0px 13px 0px rgba(162, 45, 247, 0.1), 0px 0px 25.48px 0px rgba(162, 45, 247, 0.1),
+    0px 0px 46.85px 0px rgba(162, 45, 247, 0.1), 0px 0px 19px 9px rgba(162, 45, 247, 0.1);
+  backdrop-filter: blur(100px);
+}
+
+.pagecrm_prices__btn-image {
+  width: 15px;
+  object-fit: contain;
+  margin: 0 0 0 10px;
+}
+
+.pagecrm_prices__btn:hover {
+  box-shadow: 0px 0px 20px 0px rgb(139, 255, 255);
+}
+
+.pagecrm_prices__btn:active {
+  box-shadow: 0px 0px 10px 0px rgb(215, 149, 255);
+}
+
+@media screen and (min-width: 550px) {
+  .pagecrm_prices__block {
+    max-width: 510px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .pagecrm_prices__group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 17px;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .pagecrm_prices__block {
+    justify-content: space-between;
+    max-width: 406px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .pagecrm_prices__group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 17px;
+    width: 90%;
+  }
+
+  .pagecrm_prices__block {
+    max-width: 650px;
+  }
+}
